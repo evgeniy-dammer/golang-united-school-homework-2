@@ -1,5 +1,9 @@
 package square
 
+import (
+	"math"
+)
+
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 
 const (
@@ -20,10 +24,13 @@ type myCustomInt int
 func CalcSquare(sideLen float64, sidesNum myCustomInt) float64 {
 	var result float64
 
-	if sidesNum == 4 || sidesNum == 3 {
+	if sidesNum == 4 {
 		for i := 0; i < int(sidesNum); i++ {
-			result = result + sideLen
+			result = sideLen * sideLen
 		}
+		return result
+	} else if sidesNum == 3 {
+		result = (math.Sqrt(3) * (sideLen * sideLen)) / 4
 		return result
 	} else if sidesNum == 0 {
 		result = Pi * (sideLen * sideLen)

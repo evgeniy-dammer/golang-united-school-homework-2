@@ -2,9 +2,9 @@ package square
 
 import "testing"
 
-var caseTriangle = 30.0
-var caseSquare = 40.0
-var caseCircle = 314.0
+var caseTriangle = 43.30127018922193
+var caseSquare = 100.0
+var caseCircle = 314.1593
 
 func TestCalcSquareTriangle(t *testing.T) {
 	result := CalcSquare(10.0, SidesTriangle)
