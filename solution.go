@@ -6,7 +6,7 @@ const (
 	SidesCircle   = 0
 	SidesTriangle = 3
 	SidesSquare   = 4
-	Pi            = 3.14
+	Pi            = 3.141593
 )
 
 type myCustomInt int
